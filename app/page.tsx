@@ -29,6 +29,7 @@ export default function Home() {
         <nav className="flex gap-8 text-sm">
           <a href="/#work">Work</a>
           <a href="/about">About</a>
+          <a href="/photography">Photography</a>
           <a href="/#contact">Contact</a>
         </nav>
       </header>
