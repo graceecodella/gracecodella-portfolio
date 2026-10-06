@@ -18,15 +18,15 @@ const inter = Inter({
 // Swap these placeholders for your real photos once you've picked your set.
 // Each needs an image in /public/photography/ and a short label.
 const photos = [
-  { src: "/images/photography/back wall.jpg", label: "Untitled, 2025" },
-  { src: "/images/photography/couch.jpg", label: "Untitled, 2025" },
-  { src: "/images/photography/oven.jpg", label: "Untitled, 2025" },
-  { src: "/images/photography/sink.jpg", label: "Untitled, 2025" },
-  { src: "/images/photography/balcony.jpg", label: "Untitled, 2025" },
-  { src: "/images/photography/french building 1.jpg", label: "Untitled, 2025" },
-  { src: "/images/photography/french building 2.jpg", label: "Untitled, 2025" },
-  { src: "/images/photography/french building 3.jpg", label: "Untitled, 2025" },
-  { src: "/images/photography/french window.jpg", label: "Untitled, 2025" },
+  { src: "/images/photography/back wall.jpg", label: "Airbnb property in Washington, D.C." },
+  { src: "/images/photography/couch.jpg", label: "Airbnb property in Washington, D.C." },
+  { src: "/images/photography/oven.jpg", label: "Airbnb property in Washington, D.C." },
+  { src: "/images/photography/sink.jpg", label: "Airbnb property in Washington, D.C." },
+  { src: "/images/photography/balcony.jpg", label: "Airbnb property in Washington, D.C." },
+  { src: "/images/photography/frenchbuilding1.jpg", label: "Exterior of Airbnb property in Strasbourg, France" },
+  { src: "/images/photography/frenchbuilding2.jpg", label: "Exterior of Airbnb property in Strasbourg, France" },
+  { src: "/images/photography/frenchwindow.jpg", label: "Interior of Airbnb property in Strasbourg, France" },
+  { src: "/images/photography/frenchbuilding3.jpg", label: "Exterior of Airbnb property in Strasbourg, France" },
 ];
 
 export default function Photography() {
@@ -69,16 +69,17 @@ export default function Photography() {
           Photography
         </h1>
         <p className="mt-4 text-[#2B211C]/70 leading-relaxed">
-          I am a boutique stays and travel photographer based in Washington, D.C. I enjoy capturing images that draw the 
-          viewer in with warmth, light, and unique details. I enjoy drawing attention towards cozy corners and spaces that
-          are commonly missed. My goal is to make the viewer feel as if they've already  visited the place in the photo.
+          I am a boutique stays and travel photographer based in Washington, D.C. I am passionate about capturing images that draw the 
+          viewer in with warmth, light, and unique details. I enjoy drawing attention towards cozy corners and gorgeous spaces that
+          might be otherwise missed. My goal is to make the viewer feel as if they've already visited.
           </p>
+          <p className="mt-4 text-[#B0553E]">Interested in working together? Reach out - I'd love to year about your project.</p>
         <div className="mt-6">
           <a
-            href="mailto:you@gracecodella.com?subject=Photography inquiry"
+            href="mailto:graceecodella@gmail.com?subject=Photography Inquiry from [Your Property/Name]"
             className="bg-[#B0553E] text-[#F6F1E9] px-6 py-3 rounded-sm text-sm"
           >
-            Inquire about a shoot
+            Inquire
           </a>
         </div>
       </section>
@@ -90,7 +91,7 @@ export default function Photography() {
             <button
               key={i}
               onClick={() => setOpenIndex(i)}
-              className="relative aspect-[4/5] rounded-sm overflow-hidden bg-[#E4D9C7] cursor-zoom-in"
+              className="relative aspect-[4/5] rounded-sm overflow-hidden bg-[#E4D9C7] cursor-pointer"
             >
               <Image
                 src={photo.src}
@@ -165,8 +166,8 @@ export default function Photography() {
       <section className="border-t border-[#2B211C]/10 px-10 py-14 text-center">
         <p className="text-[#2B211C]/60 text-sm">
           Available for select bookings — reach out at{" "}
-          <a href="mailto:you@gracecodella.com" className="underline underline-offset-4">
-            you@gracecodella.com
+          <a href="mailto:graceecodella@gmail.com" className="underline underline-offset-4">
+            graceecodella@gmail.com
           </a>
         </p>
       </section>
